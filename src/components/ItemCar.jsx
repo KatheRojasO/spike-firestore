@@ -9,10 +9,10 @@ export default function ItemCar({ item }) {
       <h3> {name}</h3>
       <ul>
         <li>
-          Driver: <b>{driver}</b>{" "}
+          Driver: <b>{driver}</b>
         </li>
         <li>
-          Team: <b>{team}</b>{" "}
+          Team: <b>{team}</b>
         </li>
       </ul>
     </article>

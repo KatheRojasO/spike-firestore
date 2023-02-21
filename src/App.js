@@ -1,4 +1,4 @@
-import { readCars } from "./scripts/fireStore";
+import { readCars, addCars } from "./scripts/fireStore";
 import CarsPage from "./pages/CarsPage";
 import Form from "./components/Form";
 import React, { useState, useEffect } from "react";
@@ -26,8 +26,6 @@ export default function App() {
     setStatus(2)
   }
 
- 
-
   return (
     <div className="App">
       <h1>
@@ -36,10 +34,7 @@ export default function App() {
       <Form />
       {status === 0 && <p>Loading...⏱️</p>}
       {status === 1 && <CarsPage data={data} />}
-      
       {status === 2 && <p>Error...❌</p>}
-      
-      
     </div>
   );
 }
