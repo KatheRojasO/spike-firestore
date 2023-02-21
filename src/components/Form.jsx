@@ -1,5 +1,6 @@
 import React from "react";
-import { addCars } from "../scripts/fireStore"
+import { addCars } from "../scripts/fireStore";
+import "./Form.css";
 
 export default function Form() {
   const handleSubmit = async (e) => {
@@ -14,8 +15,8 @@ export default function Form() {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className="form">
+      <form className="form-container" onSubmit={handleSubmit}>
         <input type="text" name="image" placeholder="Image URL" />
         <input type="text" name="name" placeholder="Car name" />
         <input type="text" name="driver" placeholder="Driver name" />

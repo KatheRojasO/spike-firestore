@@ -1,6 +1,7 @@
-import { readCars, addCars } from "./scripts/fireStore";
+import { readCars } from "./scripts/fireStore";
 import CarsPage from "./pages/CarsPage";
 import Form from "./components/Form";
+import "./App.css"
 import React, { useState, useEffect } from "react";
 
 
@@ -29,7 +30,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>
-        Hello World!
+        F1 Car Legends
       </h1>
       <Form />
       {status === 0 && <p>Loading...⏱️</p>}

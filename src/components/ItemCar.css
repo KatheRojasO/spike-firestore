@@ -1,0 +1,13 @@
+.item-car img {
+  width: 400px;
+}
+
+.item-car .container {
+  padding: 20px 50px;
+  width: 100%;
+}
+
+.item-car .container p, 
+.item-car .container h3 {
+  margin: 0;
+}
